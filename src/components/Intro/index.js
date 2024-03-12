@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import './style.css'
 function Intro() {
 
     const Container = styled.div`
@@ -7,12 +7,9 @@ function Intro() {
         height: 80vh;
         color: white;
 
-        /* Add your background pattern here */
-        background: rgba(29, 31, 32, 0.904)
-        radial-gradient(rgba(255, 255, 255, 0.712) 10%, transparent 1%);
-
-        background-size: 11px 11px;
-        box-shadow: inset 9px 5px 96px -22px rgba(0,0,0,1);
+        background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    
+        overflow: hidden;
     `;
     const Title = styled.h1`
         margin: 0 1em;
@@ -49,13 +46,68 @@ function Intro() {
 
     return (
         <Container>
+
+            
             <Title>
+
                 <div>
                     <div className="row">Olá, meu nome é Lucas Maciel</div>
-                    <div  className="row subtitulo">Desenvolvedor: Full-Stack</div>
+                    <div className="row subtitulo">Desenvolvedor: Full-Stack</div>
                 </div>
 
             </Title>
+            <div className="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
         </Container>
 
 
