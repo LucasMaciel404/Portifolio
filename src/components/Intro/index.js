@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Typical from 'react-typical';
 
 function Intro() {
 
@@ -53,10 +52,7 @@ function Intro() {
             <Title>
                 <div>
                     <div className="row">Olá, meu nome é Lucas Maciel</div>
-                    <Typical className="row subtitulo"
-                        steps={['Desenvolvedor: Front end', 1000, 'Desenvolvedor: Back end', 1000, 'Desenvolvedor: Full Stack', 5000]}
-                        loop={Infinity} wrapper="p"
-                        />
+                    <div  className="row subtitulo">Desenvolvedor: Full-Stack</div>
                 </div>
 
             </Title>
