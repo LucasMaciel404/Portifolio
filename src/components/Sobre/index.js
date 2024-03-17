@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import lucas from "../img/Lucas maciel.jpeg"
+import lucas from "../img/Lucas_maciel.png"
 import Social from './../Social'
 function Sobre() {
     const Container = styled.div`
