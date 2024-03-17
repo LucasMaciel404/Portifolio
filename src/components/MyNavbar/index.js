@@ -9,6 +9,7 @@ function MyNavbar() {
         <Navbar.Brand href="/">{'< Lucas Maciel />'}</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="/projects">Projetos</Nav.Link>
+          <Nav.Link href="/sobremim">Sobre mim</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

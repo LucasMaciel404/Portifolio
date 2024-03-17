@@ -1,15 +1,30 @@
 import styled from "styled-components";
-import './style.css'
+// import './style.css'
 function Intro() {
 
     const Container = styled.div`
         width: 100vw;
-        height: 80vh;
+        height: 90vh;
         color: white;
-
-        background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
     
         overflow: hidden;
+        
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    
+          
+        @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+        }
     `;
     const Title = styled.h1`
         margin: 0 1em;
@@ -26,7 +41,7 @@ function Intro() {
         font-size: 4rem;
 
         .subtitulo{
-            color: #93B1A6;
+            color: white;
             font-size: 3rem;
         }
         @media (max-width: 400px) {
@@ -47,7 +62,7 @@ function Intro() {
     return (
         <Container>
 
-            
+
             <Title>
 
                 <div>

@@ -6,6 +6,8 @@ import Projects from './pages/projects';
 
 import reportWebVitals from './reportWebVitals';
 import MyNavbar from './components/MyNavbar';
+import SobreMim from './pages/SobreMim';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -24,6 +26,7 @@ root.render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/projects" element={<Projects/>} />
+          <Route path="/SobreMim" element={<SobreMim/>} />
         </Routes>
       </div>
     </Router>

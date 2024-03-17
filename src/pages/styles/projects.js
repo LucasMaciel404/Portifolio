@@ -26,4 +26,7 @@ export const Footer = styled.footer`
         padding: 1em;
         font-size: 1em;
     }
+    @media (max-width: 750px) {
+        display: none;
+    }
 `;
