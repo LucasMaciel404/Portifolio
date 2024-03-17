@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     padding: 2em;
+    padding-buttom: 50px;
 `;
 export const Projetos = styled.div`
     margin: 0 auto;  
