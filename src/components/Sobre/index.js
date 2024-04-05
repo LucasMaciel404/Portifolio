@@ -96,8 +96,7 @@ function Sobre() {
                     <div className="myInfo">
 
                         <div data-aos="fade-right">
-                            <p> Desde o ensino fundamental, desenvolvi uma paixão por programação, criando programas e jogos em Python. Essa paixão me motivou a seguir uma carreira na área.
-                            <br /> Após o ensino médio, ingressei em um curso remunerado oferecido por uma empresa, onde aprendi sobre o funcionamento da web e tecnologias como PHP, SQL e Bootstrap. Ao concluir o curso, fui contratado como estagiário pela mesma empresa para trabalhar com a plataforma Fluig.</p>
+                            <p> Olá, me chamo Lucas, sou um desenvolvedor especializado em JavaScript, React e Node.js. Com um pouco mais de um ano e meio de experiência, tenho uma paixão por criar aplicações web que são tanto inovadoras quanto eficazes. <br> Me dedico a desenvolver soluções que melhoram a vida das pessoas, mantendo sempre o foco em escrever código limpo e sustentável. Quando não estou programando, estou lendo algum manga. Estou sempre aprendendo algo novo e gosto de um bom desafio! <br> bora codar?</p>
                             <br />
                             <Social />
                         </div>
