@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import lucas from "../img/Lucas_maciel.png"
+import lucas from "../img/Lucas_maciel.jpg"
 import Social from './../Social'
 function Sobre() {
     const Container = styled.div`
@@ -96,10 +96,14 @@ function Sobre() {
                     <div className="myInfo">
 
                         <div data-aos="fade-right">
-                            <p> Olá, me chamo Lucas, sou um desenvolvedor especializado em JavaScript, React e Node.js. Com um pouco mais de um ano e meio de experiência, tenho uma paixão por criar aplicações web que são tanto inovadoras quanto eficazes. <br> Me dedico a desenvolver soluções que melhoram a vida das pessoas, mantendo sempre o foco em escrever código limpo e sustentável. Quando não estou programando, estou lendo algum manga. Estou sempre aprendendo algo novo e gosto de um bom desafio! <br> bora codar?</p>
+                            <p>
+                                Olá, sou desenvolvedor Full Stack especializado em JavaScript, React e Node.js. Com mais de um ano e meio de experiência, já tive a oportunidade de trabalhar em projetos que vão desde o front-end até a criação e consumo de APIs robustas. <br /> <br/>Sou apaixonado por desenvolver soluções inovadoras e impactantes, sempre com foco em código limpo, escalável e eficiente. 
+                                Além da tecnologia, gosto de obras asiaticas e busco sempre aprender algo novo. <br /> <br/>Adoro desafios e acredito que o desenvolvimento é uma combinação de criatividade, lógica e constante evolução. Vamos criar algo incrível juntos? <br />
+                            </p>
                             <br />
                             <Social />
                         </div>
+
                         <div><img src={lucas} alt='Lucas maciel' data-aos="fade-up" /></div>
                     </div>
                 </div>
