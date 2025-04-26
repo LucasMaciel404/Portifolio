@@ -98,7 +98,7 @@ function Sobre() {
                         <div data-aos="fade-right">
                             <p>
                                 Olá, sou desenvolvedor Full Stack especializado em JavaScript, React e Node.js. Com mais de um ano e meio de experiência, já tive a oportunidade de trabalhar em projetos que vão desde o front-end até a criação e consumo de APIs robustas. <br /> <br/>Sou apaixonado por desenvolver soluções inovadoras e impactantes, sempre com foco em código limpo, escalável e eficiente. 
-                                Além da tecnologia, gosto de obras asiaticas e busco sempre aprender algo novo. <br /> <br/>Adoro desafios e acredito que o desenvolvimento é uma combinação de criatividade, lógica e constante evolução. Vamos criar algo incrível juntos? <br />
+                             <br /> <br/>Adoro desafios e acredito que o desenvolvimento é uma combinação de criatividade, lógica e constante evolução. Vamos criar algo incrível juntos? <br />
                             </p>
                             <br />
                             <Social />
