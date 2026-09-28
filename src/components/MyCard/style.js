@@ -6,6 +6,10 @@ export const CardContainer = styled.div`
 	border-radius: 12px;
 	overflow: hidden;
 	background: #ffffff;
+
+	display: flex;
+	flex-direction: column;
+
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
 	transition:
@@ -17,6 +21,7 @@ export const CardContainer = styled.div`
 		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 	}
 `;
+
 export const ImageContainer = styled.div`
 	width: 100%;
 	height: ${({ $featured }) => ($featured ? "350px" : "200px")};
@@ -40,6 +45,12 @@ export const ProjectImage = styled.img`
 
 export const CardBody = styled.div`
 	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	flex: 1;
 `;
 
 export const CardTitle = styled.h2`

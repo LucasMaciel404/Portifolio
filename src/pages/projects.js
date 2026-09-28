@@ -7,6 +7,7 @@ import digitalMenu from "../components/img/cardapio02.png";
 import digitalStore from "../components/img/store.png";
 import souMais from "../components/img/soumais.png";
 import leleacai from "../components/img/leleacai.png";
+import pdv from "../components/img/Home.png";
 import millaConceitoPage from "../components/img/milla-conceito.png";
 
 import {
@@ -30,8 +31,8 @@ function Projects() {
 				</Title>
 
 				<Subtitle>
-					Alguns dos projetos que desenvolvi, desde aplicações
-					web até landing pages para negócios reais.
+					Alguns dos projetos que desenvolvi, desde aplicações web até landing
+					pages para negócios reais.
 				</Subtitle>
 			</Header>
 
@@ -47,6 +48,16 @@ function Projects() {
 			</Highlight>
 
 			<ProjectsGrid>
+				<Highlight data-aos="fade-up">
+					<MyCard
+						name="PDV para Restaurante"
+						img={pdv}
+						github="https://github.com/LucasMaciel404/pdv-api"
+						vercel="#"
+						description="Sistema de ponto de venda para restaurantes e bares, desenvolvido com Java e Spring Boot. A aplicação utiliza pedidos vinculados a mesas e cartões NFC, com autenticação, controle de acesso, PostgreSQL, APIs REST e integração com serviços de pagamento."
+						featured={true}
+					/>
+				</Highlight>
 				<MyCard
 					name="Barber Guide"
 					img={barberGuide}
