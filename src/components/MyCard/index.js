@@ -1,36 +1,58 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import git from './../svg/git.svg'
-import styled from 'styled-components';
-import './style.css';
+import git from "./../svg/git.svg";
 
-function MyCard({ img, name, discription, githube, vercel }) {
-    const Scroll = styled.p` 
-    min-height: 100px;
-    max-height: 100px; /* Altura máxima do parágrafo */
-    overflow-y: scroll; /* Adiciona a rolagem vertical se o conteúdo exceder a altura máxima */
+import {
+	CardContainer,
+	ImageContainer,
+	ProjectImage,
+	CardBody,
+	CardTitle,
+	Description,
+	ButtonsContainer,
+	ProjectButton,
+	GitIcon,
+} from "./style";
 
-    `;
+function MyCard({ img, name, description, github, vercel, featured = false }) {
+	const hasWebsite = vercel && vercel !== "#";
+	const hasGithub = github && github !== "#";
 
-    return (
-        <Card style={{ width: '18rem', margin: 20 }} data-aos="fade-up">
-            <Card.Img variant="top" style={{ height: 100, width: 'auto', margin: 20 }} src={img} />
-            <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text>
-                <Scroll>{discription}</Scroll>
-                </Card.Text>
-                <div className='row'>
-                    <div className='col'>
-                        <Button className={vercel == '#'? 'block-it': ''} variant={vercel == '#'? 'secondary' : 'primary'} href={vercel} target='_blank'> Visualizar </Button>
-                    </div>
-                    <div className='col'>
-                        <Button className={githube == '#'? 'block-it': ''} variant={githube == '#'? 'secondary': 'dark'} href={githube} target='_blank'> <img src={git} alt='githube' /> Githube</Button>
-                    </div>
-                </div>
-            </Card.Body>
-        </Card>
-    );
+	return (
+		<CardContainer $featured={featured} data-aos="fade-up">
+			<ImageContainer $featured={featured}>
+				<ProjectImage
+					$featured={featured}
+					src={img}
+					alt={`Imagem do projeto ${name}`}
+				/>
+			</ImageContainer>
+
+			<CardBody>
+				<CardTitle>{name}</CardTitle>
+
+				<Description>{description}</Description>
+
+				<ButtonsContainer>
+					<ProjectButton
+						href={hasWebsite ? vercel : undefined}
+						target={hasWebsite ? "_blank" : undefined}
+						rel={hasWebsite ? "noreferrer" : undefined}
+						className={!hasWebsite ? "disabled" : ""}>
+						Visualizar
+					</ProjectButton>
+
+					<ProjectButton
+						variant="github"
+						href={hasGithub ? github : undefined}
+						target={hasGithub ? "_blank" : undefined}
+						rel={hasGithub ? "noreferrer" : undefined}
+						className={!hasGithub ? "disabled" : ""}>
+						<GitIcon src={git} alt="GitHub" />
+						GitHub
+					</ProjectButton>
+				</ButtonsContainer>
+			</CardBody>
+		</CardContainer>
+	);
 }
 
 export default MyCard;

@@ -1,114 +1,173 @@
-import styled from "styled-components"
-import lucas from "../img/Lucas_maciel.jpg"
-import Social from './../Social'
+import styled from "styled-components";
+
+import lucas from "../img/Lucas_maciel.jpg";
+import Social from "./../Social";
+
+const Container = styled.section`
+	width: 100%;
+	min-height: 85vh;
+	padding: 80px 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	box-sizing: border-box;
+
+	color: #222;
+
+	.content {
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	.heading {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	.heading span {
+		display: block;
+		margin-bottom: 15px;
+
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 3px;
+
+		color: #666;
+	}
+
+	.heading h2 {
+		margin: 0;
+
+		font-size: clamp(2rem, 4vw, 3.5rem);
+		line-height: 1.1;
+		font-weight: 700;
+		color: #222;
+	}
+
+	.info {
+		display: grid;
+		grid-template-columns: 1.2fr 0.8fr;
+		align-items: center;
+		gap: 80px;
+	}
+
+	.text {
+		max-width: 650px;
+	}
+
+	.text p {
+		margin: 0;
+
+		font-size: 1.1rem;
+		line-height: 1.8;
+		color: #555;
+	}
+
+	.social {
+		margin-top: 30px;
+	}
+
+	.photo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.photo img {
+		width: min(100%, 380px);
+		aspect-ratio: 1;
+		object-fit: cover;
+
+		border-radius: 50%;
+
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+	}
+
+	@media (max-width: 900px) {
+		.info {
+			grid-template-columns: 1fr;
+			gap: 50px;
+		}
+
+		.text {
+			max-width: 100%;
+			order: 2;
+		}
+
+		.photo {
+			order: 1;
+		}
+
+		.photo img {
+			width: 280px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		padding: 60px 20px;
+
+		.heading {
+			margin-bottom: 40px;
+		}
+
+		.heading h2 {
+			font-size: 2rem;
+		}
+
+		.text p {
+			font-size: 1rem;
+			line-height: 1.7;
+		}
+
+		.photo img {
+			width: 220px;
+		}
+	}
+`;
+
 function Sobre() {
-    const Container = styled.div`
-    width: 100%;
-    height: 85vh;
-    display:flex;
-    margin-bottom: 2em;
-    align-items: center;
-    justify-content: center;
-        .info{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin-top: 2em;
-        }
-        .myInfo{
-            display: flex;
-            justify-content: space-aroud;
-            flex-wrap: wrap;
-        }
-        .myInfo > div{
-            width: 500px;
-            margin: 2em;
-            align-items: center;
-        }
-        p{
-            font-size: 1.3em;
-            text-align: justify;
-        }
+	return (
+		<Container id="sobreMim">
+			<div className="content">
+				<div className="heading" data-aos="fade-down">
+					<span>SOBRE MIM</span>
 
-        h2{
-            margin: 1em;
-            text-align: center;
-        }
-        img{
-            display: flex;
-            margin: 0 auto;
-            width: 80%;
-            height: auto;
-            border-radius: 50%;
-        }
-        @media (max-width: 1150px) {
-            p{
-                font-size: 1.1em;
-            }
-            .myInfo > div{
-                width: 400px;
-            }
-        }
-        @media (max-width: 950px) {
-            p{
-                font-size: 1em;
-            }
-            .myInfo > div{
-                width: 300px;
-            }
-        }
-        @media (max-width: 750px) {
-            align-items: start;
-            
-            p{
-                font-size: 1.3em;
-            }
-            .myInfo{
-                justify-content: center;
-            }
-            .myInfo > div{
-                width: 500px;
-            }
-        }
-        @media (max-width: 500px) {
-            align-items: start;
-            
-            p{
-                font-size: 1em;
-            }
-            .myInfo{
-                justify-content: center;
-            }
-            .myInfo > div{
-                width: 80vw;
-            }
-        }
-    `
+					<h2>Ok, mas quem é o Lucas?</h2>
+				</div>
 
-    return (
-        <Container id="sobreMim">
-            <div>
-                <div>
-                    <h2 data-aos="fade-down">Ok, mas quem é o Lucas?</h2>
-                </div>
-                <div className="info">
-                    <div className="myInfo">
+				<div className="info">
+					<div className="text" data-aos="fade-right">
+						<p>
+							Olá, sou Lucas Maciel, desenvolvedor de software
+							com experiência no desenvolvimento de aplicações
+							web, APIs REST e integração entre sistemas.
+							<br />
+							<br />
+							Tenho experiência com Java, Spring Boot, React,
+							React Native e TypeScript, além de conhecimentos
+							em bancos de dados, autenticação, APIs e
+							integrações.
+							<br />
+							<br />
+							Além da experiência profissional, também desenvolvo
+							projetos próprios e soluções para negócios,
+							buscando transformar ideias em aplicações
+							funcionais, responsivas e fáceis de utilizar.
+						</p>
 
-                        <div data-aos="fade-right">
-                            <p>
-                                Olá, sou desenvolvedor Full Stack especializado em JavaScript, React e Node.js. Com mais de um ano e meio de experiência, já tive a oportunidade de trabalhar em projetos que vão desde o front-end até a criação e consumo de APIs robustas. <br /> <br/>Sou apaixonado por desenvolver soluções inovadoras e impactantes, sempre com foco em código limpo, escalável e eficiente. 
-                             <br /> <br/>Adoro desafios e acredito que o desenvolvimento é uma combinação de criatividade, lógica e constante evolução. Vamos criar algo incrível juntos? <br />
-                            </p>
-                            <br />
-                            <Social />
-                        </div>
+						<div className="social">
+							<Social />
+						</div>
+					</div>
 
-                        <div><img src={lucas} alt='Lucas maciel' data-aos="fade-up" /></div>
-                    </div>
-                </div>
-            </div>
-        </Container>
-    )
+					<div className="photo" data-aos="fade-left">
+						<img src={lucas} alt="Lucas Maciel" />
+					</div>
+				</div>
+			</div>
+		</Container>
+	);
 }
+
 export default Sobre;
