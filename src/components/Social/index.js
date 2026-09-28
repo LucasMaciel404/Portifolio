@@ -108,6 +108,7 @@ function Social() {
                         aria-label="Linkedin"
                         data-social="Linkedin"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <div class="filled"></div>
                         <LinkedinSVG/>
@@ -120,6 +121,7 @@ function Social() {
                         aria-label="Instagram"
                         data-social="Instagram"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <div class="filled"></div>
                         <InstagramSVG/>
