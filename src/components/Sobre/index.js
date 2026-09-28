@@ -139,21 +139,22 @@ function Sobre() {
 				<div className="info">
 					<div className="text" data-aos="fade-right">
 						<p>
-							Olá, sou Lucas Maciel, desenvolvedor de software
-							com experiência no desenvolvimento de aplicações
-							web, APIs REST e integração entre sistemas.
+							Olá, sou Lucas Maciel, desenvolvedor de software com experiência
+							no desenvolvimento de aplicações web, APIs REST e integração entre
+							sistemas.
 							<br />
 							<br />
-							Tenho experiência com Java, Spring Boot, React,
-							React Native e TypeScript, além de conhecimentos
-							em bancos de dados, autenticação, APIs e
-							integrações.
+							Tenho experiência com Java, Spring Boot, React, React Native e
+							TypeScript, além de conhecimentos em PostgreSQL, MongoDB,
+							autenticação, desenvolvimento de APIs e integração de serviços.
 							<br />
 							<br />
-							Além da experiência profissional, também desenvolvo
-							projetos próprios e soluções para negócios,
-							buscando transformar ideias em aplicações
-							funcionais, responsivas e fáceis de utilizar.
+							Além da experiência profissional, também desenvolvo projetos
+							próprios e soluções para negócios, aplicando essas tecnologias na
+							construção de aplicações funcionais, responsivas e pensadas para
+							resolver problemas reais. Gosto de transformar ideias em produtos
+							digitais e estou sempre buscando aprimorar meus conhecimentos e
+							explorar novas tecnologias.
 						</p>
 
 						<div className="social">
